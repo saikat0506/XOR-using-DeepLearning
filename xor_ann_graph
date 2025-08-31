@@ -1,0 +1,75 @@
+digraph {
+	nodesep=1 rankdir=LR ranksep=1 splines=straight
+	node [fontname=Arial fontsize=14 shape=circle style=filled]
+	i1 [label=x1 fillcolor="#f0e442" width=0.8]
+	i2 [label=x2 fillcolor="#f0e442" width=0.8]
+	h1_1 [label="H1_1
+Bias=0.00" fillcolor="#56b4e9" width=0.8]
+	h1_2 [label="H1_2
+Bias=0.00" fillcolor="#56b4e9" width=0.8]
+	h1_3 [label="H1_3
+Bias=0.00" fillcolor="#56b4e9" width=0.8]
+	h1_4 [label="H1_4
+Bias=0.00" fillcolor="#56b4e9" width=0.8]
+	h2_1 [label="H2_1
+Bias=0.00" fillcolor="#009e73" width=0.8]
+	h2_2 [label="H2_2
+Bias=0.00" fillcolor="#009e73" width=0.8]
+	h2_3 [label="H2_3
+Bias=0.00" fillcolor="#009e73" width=0.8]
+	h2_4 [label="H2_4
+Bias=0.00" fillcolor="#009e73" width=0.8]
+	o1 [label="Output
+Bias=0.00" fillcolor="#d55e00" width=0.8]
+	i1 -> h1_1 [label=0.88 color="#999999" penwidth=2]
+	i1 -> h1_2 [label=-0.13 color="#999999" penwidth=2]
+	i1 -> h1_3 [label=0.42 color="#999999" penwidth=2]
+	i1 -> h1_4 [label=-0.44 color="#999999" penwidth=2]
+	i2 -> h1_1 [label=0.38 color="#999999" penwidth=2]
+	i2 -> h1_2 [label=-0.24 color="#999999" penwidth=2]
+	i2 -> h1_3 [label=0.85 color="#999999" penwidth=2]
+	i2 -> h1_4 [label=0.03 color="#999999" penwidth=2]
+	h1_1 -> h2_1 [label=0.48 color="#0072b2" penwidth=2]
+	h1_1 -> h2_2 [label=0.79 color="#0072b2" penwidth=2]
+	h1_1 -> h2_3 [label=-0.22 color="#0072b2" penwidth=2]
+	h1_1 -> h2_4 [label=-0.01 color="#0072b2" penwidth=2]
+	h1_2 -> h2_1 [label=0.67 color="#0072b2" penwidth=2]
+	h1_2 -> h2_2 [label=0.75 color="#0072b2" penwidth=2]
+	h1_2 -> h2_3 [label=-0.55 color="#0072b2" penwidth=2]
+	h1_2 -> h2_4 [label=0.21 color="#0072b2" penwidth=2]
+	h1_3 -> h2_1 [label=0.57 color="#0072b2" penwidth=2]
+	h1_3 -> h2_2 [label=0.43 color="#0072b2" penwidth=2]
+	h1_3 -> h2_3 [label=-0.03 color="#0072b2" penwidth=2]
+	h1_3 -> h2_4 [label=-0.04 color="#0072b2" penwidth=2]
+	h1_4 -> h2_1 [label=-0.60 color="#0072b2" penwidth=2]
+	h1_4 -> h2_2 [label=0.21 color="#0072b2" penwidth=2]
+	h1_4 -> h2_3 [label=-0.41 color="#0072b2" penwidth=2]
+	h1_4 -> h2_4 [label=-0.35 color="#0072b2" penwidth=2]
+	h2_1 -> o1 [label=-0.28 color="#cc79a7" penwidth=2]
+	h2_2 -> o1 [label=-0.75 color="#cc79a7" penwidth=2]
+	h2_3 -> o1 [label=-0.83 color="#cc79a7" penwidth=2]
+	h2_4 -> o1 [label=-0.40 color="#cc79a7" penwidth=2]
+	{
+		rank=same
+		i1
+		i2
+	}
+	{
+		rank=same
+		h1_1
+		h1_2
+		h1_3
+		h1_4
+	}
+	{
+		rank=same
+		h2_1
+		h2_2
+		h2_3
+		h2_4
+	}
+	{
+		rank=same
+		o1
+	}
+}
